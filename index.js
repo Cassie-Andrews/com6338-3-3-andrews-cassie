@@ -2,27 +2,31 @@
 
 //this global variable contains an array of question objects
 var questionsArr = [
-    {
-        question: 'Question 1',
-        answer: true
-    },
-    {
-        question: 'Question 2',
-        answer: false 
-    },
-    {
-        question: 'Question 3',
-        answer: true
-    },
-    {
-        question: 'Question 4',
-        answer: false
-    },
-    {
-        question: 'Question 5',
-        answer: true
-    }
-];
+        {
+            question: 'Question 1',
+            answer: true
+        },
+        {
+            question: 'Question 2',
+            answer: false 
+        },
+        {
+            question: 'Question 3',
+            answer: true
+        },
+        {
+            question: 'Question 4',
+            answer: false
+        },
+        {
+            question: 'Question 5',
+            answer: true
+        },
+        {
+            question: 'Question 6',
+            answer: false
+        }
+    ];
 //this data structure contains all the q and a info for the quiz
 function runQuiz() {
 
