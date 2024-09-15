@@ -5,28 +5,28 @@
 //question objects should have 2 properties; question (string) and answer (boolean)
 var questionsArr = [
         {
-            question: 'Question 1',
+            question: "Florida gained statehood in 1845.",
             answer: true
         },
         {
-            question: 'Question 2',
+            question: "Miami is Florida's most populous city.",
             answer: false 
         },
         {
-            question: 'Question 3',
+            question: "Florida's state flower is the orange blossom.",
             answer: true
         },
         {
-            question: 'Question 4',
+            question: "Florida's state bird is the flamingo.",
             answer: false
         },
         {
-            question: 'Question 5',
+            question: "Florida's capital city is Tallahassee.",
             answer: true
         },
         {
-            question: 'Question 6',
-            answer: true
+            question: "Florida's nickname is the hurricane state.",
+            answer: false
         }
     ];
 
