@@ -1,34 +1,38 @@
 // Your code here
 
 //this global variable contains an array of question objects
-//this data structure contain all the q and a info for the quiz
+var questionsArr = [
+    {
+        question: 'Question 1',
+        answer: true
+    },
+    {
+        question: 'Question 2',
+        answer: false 
+    },
+    {
+        question: 'Question 3',
+        answer: true
+    },
+    {
+        question: 'Question 4',
+        answer: false
+    },
+    {
+        question: 'Question 5',
+        answer: true
+    }
+];
+//this data structure contains all the q and a info for the quiz
 function runQuiz() {
-    var questionsArr = [
-        {
-            question:'Question 1',
-            answer:true
-        },
-        {
-            question:'Question 2',
-            answer:false 
-        },
-        {
-            question:'Question 3',
-            answer:true
-        },
-        {
-            question:'Question 4',
-            answer:false
-        },
-        {
-            question:'Question 5',
-            answer:true
-        }
-    ];
+
+    console.log(questionsArr);
+
+    var score = 0;
 
     //for = keyword, (marks the condition/counter)
     for (var i = 0; i < questionsArr.length; i++) {
-        var question = questionsArr[i].question
-        var answer = confirm(question)
+        var question = questionsArr[i].question;
+        var correctAnswer = questionsArr[i].answer;
     }
 }
