@@ -43,6 +43,8 @@ function runQuiz() {
         if (userInput === answer) {
             score++;
         }
+
+        console.log(typeof"score")
     }
 
     alert('Score: ' + score + '/' + questionsArr.length);
