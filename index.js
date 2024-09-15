@@ -3,40 +3,18 @@
 //this global variable contains an array of question objects
 //this data structure contain all the q and a info for the quiz
 function runQuiz() {
-    console.log('here')
-}
+    var questionsArr = [
+        {question: 'Question 1', answer: true},
+        {question: 'Question 2', answer: true},
+        {question: 'Question 3', answer: true},
+        {question: 'Question 4', answer: true},
+        {question: 'Question 5', answer: true}
+    ]
 
-
-//the run quiz function contains the code for the quiz
-var questionsArr = [
-    {
-        question: 'Question 1',
-        answer: true
+    //for = keyword, (marks the condition/counter)
+    for (var i = 0; i < questionsArr.length; i++) {
+        var question = questionsArr[i].question
+        console.log(question) //this worked properly but content in next step is off
+        var answer = confirm(question) //showing [object Object] in confirm
     }
-    ,
-    {
-        question: 'Question 2',
-        answer: false
-    }
-    ,
-    {
-        question: 'Question 3',
-        answer: true
-    }
-    ,
-    {
-        question: 'Question 4',
-        answer: false
-    }
-    ,
-    {
-        question: 'Question 5',
-        answer: true
-    }
-]
-
-//for = keyword, (marks the condition/counter)
-for (let i = 0; i < questionsArr.length; i++) {
-    const answer = questionsArr[i];
-    
 }
