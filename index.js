@@ -37,6 +37,14 @@ function runQuiz() {
     //for = keyword, (marks the condition/counter)
     for (var i = 0; i < questionsArr.length; i++) {
         var question = questionsArr[i].question;
-        var correctAnswer = questionsArr[i].answer;
+        var answer = questionsArr[i].answer;
+        var userInput = confirm(question);
+
+        if (userInput === answer) {
+            score++;
+        }
     }
+
+    alert('Score: ' + score + '/' + questionsArr.length);
+
 }
