@@ -1,6 +1,8 @@
-// Your code here
+//start quiz button is already set to run the function runQuiz
 
-//this global variable contains an array of question objects
+
+//global variable containing an array of >= 5 question objects
+//question objects should have 2 properties; question (string) and answer (boolean)
 var questionsArr = [
         {
             question: 'Question 1',
@@ -24,22 +26,25 @@ var questionsArr = [
         },
         {
             question: 'Question 6',
-            answer: false
+            answer: true
         }
     ];
-//this data structure contains all the q and a info for the quiz
+
+
+//function named runQuiz that uses a for loop to iterate over the array above
 function runQuiz() {
 
     console.log(questionsArr);
 
-    var score = 0;
+    var score = 0; //score starts at 0
 
-    //for = keyword, (marks the condition/counter)
+    //for loop where "for" is the keyword and (parentheses mark the condition/counter)
     for (var i = 0; i < questionsArr.length; i++) {
         var question = questionsArr[i].question;
         var answer = questionsArr[i].answer;
         var userInput = confirm(question);
-
+    
+    //calculating score, if user input is correct then +1 to score
         if (userInput === answer) {
             score++;
         }
@@ -47,9 +52,14 @@ function runQuiz() {
         console.log(typeof score)
     }
 
+    //calculating score percentage 
     var totalQuestions = questionsArr.length;
     var percentage = (score / totalQuestions) * 100;
 
-    alert('You scored: ' + percentage + '%');
+    //round score percentage to a whole number
+    var finalPercentage = (Math.round(percentage));
+
+    //alert displaying final score as a percentage of total correct
+    alert('You scored: ' + finalPercentage + '%');
 
 }
