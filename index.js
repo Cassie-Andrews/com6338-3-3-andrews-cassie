@@ -44,9 +44,12 @@ function runQuiz() {
             score++;
         }
 
-        console.log(typeof"score")
+        console.log(typeof score)
     }
 
-    alert('Score: ' + score + '/' + questionsArr.length);
+    var totalQuestions = questionsArr.length;
+    var percentage = (score / totalQuestions) * 100;
+
+    alert('You scored: ' + percentage + '%');
 
 }
